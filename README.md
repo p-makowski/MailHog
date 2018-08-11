@@ -73,6 +73,13 @@ sendmail_path = /usr/local/bin/mhsendmail
 sendmail_path = /usr/sbin/sendmail -S mail:1025
 ```
 
+##### MacOS
+```
+sendmail: illegal option -- S
+```
+Use:
+`sendmail_path = /usr/sbin/sendmail -t -i` and add `relayhost = 127.0.0.1:1025` in `/etc/postfix/main.cf`
+
 #### Web UI
 
 ![Screenshot of MailHog web interface](/docs/MailHog.png "MailHog web interface")
